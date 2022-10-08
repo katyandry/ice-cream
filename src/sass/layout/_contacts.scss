@@ -1,0 +1,185 @@
+.contacts__title {
+  display: none;
+}
+
+.contacts__container {
+  background-color: var(--primary-background-color);
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.contacts__item {
+  width: 368px;
+  height: 538px;
+  padding: 40px;
+  background: var(--primary-white-text-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__item_category {
+  height: 28px;
+  border-radius: 6px;
+  margin-bottom: 32px;
+  display: inline-block;
+  background-color: var(--button-default-color);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primary-black-text-color);
+}
+
+.contacts__item_category-food {
+  width: 138px;
+}
+
+.contacts__item_category-cafe-l {
+  width: 75.1px;
+}
+
+.contacts__item_category-cafe-r {
+  width: 73px;
+}
+
+.contacts__city {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  color: var(--primary-black-text-color);
+}
+
+.contacts__item_adress {
+  width: 262px;
+  height: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: var(--contacts-secondory-text-color);
+}
+
+.contacts__item_adress {
+  &:after {
+    content: '';
+    width: 288px;
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.ontacts__item_weekdays {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: var(--primary-black-text-color);
+}
+
+.contacts__item_days {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: var(--primary-black-text-color);
+}
+
+.contacts__item_schedule {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  color: var(--button-disabled-color);
+}
+
+.contacts__days-schedule {
+  &:after {
+    content: '';
+    width: 288px;
+    display: block;
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__phone-mail {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.83;
+  color: var(--primary-black-text-color);
+}
+
+.contacts__btn-location {
+  width: 196px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #131313;
+  margin-right: 16px;
+
+  &:hover {
+    background: var(--button-hover-focus-color);
+  }
+
+  &:focus {
+    background: var(--button-hover-focus-color);
+    color: var(--primary-white-text-color);
+  }
+}
+
+.contacts__btn-franchise {
+  width: 196px;
+  height: 42px;
+  background: #84a178;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #131313;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  &:hover {
+    border: 2px solid var(--button-hover-focus-color);
+  }
+  &:focus {
+    border: 2px solid var(--button-hover-focus-color);
+    color: var(--primary-white-text-color);
+  }
+}
+
+.contacts__buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
