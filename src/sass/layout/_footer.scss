@@ -92,6 +92,7 @@
   width: 32px;
   height: 32px;
   background-color: #f8d24e;
+  transition: width var(--timing-functione), height var(--timing-functione);
 
   &:hover,
   &:focus {
@@ -110,6 +111,7 @@
 
 .footer-social__icon {
   fill: #84a178;
+  transition: fill var(--timing-functione);
 
   &:hover,
   &:focus {
