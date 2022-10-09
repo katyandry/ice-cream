@@ -1,26 +1,11 @@
 <header class="page-header">
   <div class="container container--mobile-container">
     <a class="logo" href="https://katyandry.github.io/ice-cream/">
-      <img
-        class="logo__icon"
-        srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x"
-        src="#"
-        alt="сompany`s logo"
-        width="40"
-        height="37"
-      />
+      <img class="logo__icon" srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x" src="#"
+        alt="сompany`s logo" width="40" height="37" />
     </a>
-    <button
-      class="button button__open-mobile-navigation"
-      type="button"
-      data-menu-open
-    >
-      <svg
-        class="button__open-icon"
-        aria-label="open button"
-        width="32"
-        height="32"
-      >
+    <button class="button button__open-mobile-navigation" type="button" data-menu-open>
+      <svg class="button__open-icon" aria-label="open button" width="32" height="32">
         <use href="./images/sprite.svg#icon_burger"></use>
       </svg>
     </button>
@@ -53,26 +38,11 @@
     <div class="container">
       <div class="mobile-navigation__container">
         <a class="logo" href="https://katyandry.github.io/ice-cream/">
-          <img
-            class="logo__icon"
-            srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x"
-            src="#"
-            alt="сompany`s logo"
-            width="40"
-            height="37"
-          />
+          <img class="logo__icon" srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x" src="#"
+            alt="сompany`s logo" width="40" height="37" />
         </a>
-        <button
-          class="mobile-navigation__close-button"
-          type="button"
-          data-menu-close
-        >
-          <svg
-            class="mobile-navigation__close-icon"
-            aria-label="close-button"
-            width="32"
-            height="32"
-          >
+        <button class="mobile-navigation__close-button" type="button" data-menu-close>
+          <svg class="mobile-navigation__close-icon" aria-label="close-button" width="32" height="32">
             <use href="./images/sprite.svg#icon_close"></use>
           </svg>
         </button>
@@ -106,19 +76,3 @@
     </div>
   </div>
 </header>
-<script>
-  (() => {
-    const refs = {
-      openMenuBtn: document.querySelector('[data-menu-open]'),
-      closeMenuBtn: document.querySelector('[data-menu-close]'),
-      menu: document.querySelector('[data-menu]'),
-    };
-
-    refs.openMenuBtn.addEventListener('click', toggleModal);
-    refs.closeMenuBtn.addEventListener('click', toggleModal);
-
-    function toggleModal() {
-      refs.menu.classList.toggle('is-open');
-    }
-  })();
-</script>
