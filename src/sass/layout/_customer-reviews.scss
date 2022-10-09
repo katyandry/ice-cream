@@ -20,16 +20,28 @@
 }
 
 .reviews {
+
     position: relative;
-    max-width: 320px;
+    padding-bottom: 400px;
+    padding-top: 180px;
     margin-right: auto;
     margin-left: auto;
+    background-image: url(./../images/bcg_block4@1x.png);
+    background-size: 1010px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .reviews {
+        background-image: url(./../images/bcg_block4@2x.png);
+
+    }
 }
 
 .reviews__wrapper {
     position: relative;
     overflow: hidden;
-    background-color: #eee;
 }
 
 .reviews__items {
@@ -51,12 +63,12 @@
 
 .reviews__btn {
     position: absolute;
-    top: 50%;
+    top: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 60%;
+    height: 30%;
     background-color: transparent;
     border: none;
     outline: none;
@@ -76,7 +88,7 @@
 .reviews__indicators {
     position: absolute;
     right: 0;
-    bottom: 30px;
+    bottom: 465px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -92,15 +104,94 @@
     height: 12px;
     margin-right: 3px;
     margin-left: 3px;
-    background-color: #D9D9D9;
+    background-color: hwb(0 85% 15%);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .reviews__indicator_active {
-    background-color: #84A178;
+    background-color: var(--primary-background-color);
 }
 
 .transition-none {
     transition: none;
+}
+
+.slider {
+    font-family: var(--primaty-fonts);
+}
+
+.slider__photo-customer {
+    margin-bottom: 32px;
+    border-radius: 50%;
+}
+
+
+
+.slider__reviews {
+    background-color: var(--primary-background-color);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 34px 39px;
+    color: var(--primary-white-text-color);
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+}
+
+.slider__info-customer {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.85;
+    color: var(--primary-black-text-color);
+}
+
+@media screen and (min-width: 768px) {
+    .reviews {
+        padding-top: 223px;
+        padding-bottom: 427px;
+
+    }
+
+    .slider__reviews {
+        padding: 28px 80px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.85;
+        margin-bottom: 32px;
+    }
+
+    .slider__photo-customer {
+        margin-bottom: 28px;
+    }
+
+    .slider__info-customer {
+        font-size: 16px;
+    }
+
+    .reviews__indicators {
+        bottom: 475px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .reviews {
+        padding-top: 452px;
+        padding-bottom: 251px;
+    }
+
+    .reviews__btn {
+        top: 60%;
+    }
+
+    .reviews__indicators {
+        bottom: 295px;
+    }
+
+    .slider__photo-customer {
+        margin-bottom: 32px;
+    }
+
+
 }
