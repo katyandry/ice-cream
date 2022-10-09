@@ -1,26 +1,31 @@
 <header class="page-header">
-  <div class="container">
+  <div class="container container--mobile-container">
     <a class="logo" href="https://katyandry.github.io/ice-cream/">
       <img
         class="logo__icon"
-        href=""
-        aria-label="сompany`s logo"
+        srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x"
+        src="#"
+        alt="сompany`s logo"
         width="40"
         height="37"
       />
     </a>
-    <button class="button button__open-mobile-navigation" type="button">
+    <button
+      class="button button__open-mobile-navigation"
+      type="button"
+      data-menu-open
+    >
       <svg
         class="button__open-icon"
         aria-label="open button"
         width="32"
         height="32"
       >
-        <use href="#"></use>
+        <use href="./images/sprite.svg#icon_burger"></use>
       </svg>
     </button>
     <nav class="navigation">
-      <ul class="navigation__list">
+      <ul class="navigation__list list">
         <li class="navigation__item">
           Home
           <a name="Home" href="#"></a>
@@ -33,36 +38,46 @@
           Our products
           <a name="products" href="#"></a>
         </li>
-
         <li class="navigation__item">
           Contact
           <a name="contact" href="#"></a>
         </li>
       </ul>
     </nav>
-    <button class="button" type="button">Buy now</button>
+    <button class="button button--buy-now button__base" type="button">
+      Buy now
+    </button>
   </div>
-  <div class="mobile-navigation">
+
+  <div class="mobile-navigation" data-menu>
     <div class="container">
-      <a class="logo" href="https://katyandry.github.io/ice-cream/">
-        <img
-          class="logo__icon"
-          href=""
-          aria-label="сompany`s logo"
-          width="40"
-          height="37"
-        />
-      </a>
-      <button class="mobile-navigation__close-button" type="button">
-        <svg
-          class="mobile-navigation__close-icon"
-          aria-label="close-button"
-          width="32"
-          height="32"
+      <div class="mobile-navigation__container">
+        <a class="logo" href="https://katyandry.github.io/ice-cream/">
+          <img
+            class="logo__icon"
+            srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x"
+            src="#"
+            alt="сompany`s logo"
+            width="40"
+            height="37"
+          />
+        </a>
+        <button
+          class="mobile-navigation__close-button"
+          type="button"
+          data-menu-close
         >
-          <use href="#"></use>
-        </svg>
-      </button>
+          <svg
+            class="mobile-navigation__close-icon"
+            aria-label="close-button"
+            width="32"
+            height="32"
+          >
+            <use href="./images/sprite.svg#icon_close"></use>
+          </svg>
+        </button>
+      </div>
+
       <ul class="mobile-navigation__list list">
         <li class="mobile-navigation__item">
           Home
@@ -82,7 +97,28 @@
           <a name="contact" href="#"></a>
         </li>
       </ul>
-      <button class="button" type="button">Buy now</button>
+      <button class="button__base mobile-navigation--button" type="button">
+        Buy now
+        <svg class="mobile-navigation--button-icon">
+          <use href="./images/sprite.svg#icon_arrow_in_button"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </header>
+<script>
+  (() => {
+    const refs = {
+      openMenuBtn: document.querySelector('[data-menu-open]'),
+      closeMenuBtn: document.querySelector('[data-menu-close]'),
+      menu: document.querySelector('[data-menu]'),
+    };
+
+    refs.openMenuBtn.addEventListener('click', toggleModal);
+    refs.closeMenuBtn.addEventListener('click', toggleModal);
+
+    function toggleModal() {
+      refs.menu.classList.toggle('is-open');
+    }
+  })();
+</script>
