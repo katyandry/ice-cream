@@ -29,3 +29,14 @@ button {
     cursor: pointer;
     font-family: inherit;
 }
+
+body {
+    color: var(--primary-black-text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-white-text-color)
+}
+   
