@@ -14,11 +14,6 @@
     padding: 80px 20px;
 }
 
-.reviews__item_active .reviews__text {
-    animation-name: fadeIn;
-    animation-duration: 2s;
-}
-
 .reviews {
 
     position: relative;
@@ -104,7 +99,7 @@
     height: 12px;
     margin-right: 3px;
     margin-left: 3px;
-    background-color: hwb(0 85% 15%);
+    background-color: #d9d9d9;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -122,6 +117,8 @@
 }
 
 .slider__photo-customer {
+    width: 85px;
+    height: 85px;
     margin-bottom: 32px;
     border-radius: 50%;
 }
