@@ -125,6 +125,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 84px;
+  margin-bottom: 24px;
 }
 
 .product-selection__item {
@@ -177,11 +178,18 @@ img {
 .product-selection__position {
   margin-left: auto;
   margin-right: auto;
-  height: 132px;
+  padding-top: 96px;
+  padding-bottom: 20px;
   width: 128px;
+  background-color: #fcfcfc;
 
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
   border-radius: 16px;
+
+  &:hover,
+  &:focus {
+    background-color: #efd478;
+  }
 }
 
 .product-selection__position--ice-cream {
@@ -192,7 +200,7 @@ img {
   border: 2px solid #efd478;
 }
 
-.product-selection__position--ice-milkshake {
+.product-selection__position--milkshake {
   border: 2px solid #d6936d;
 }
 
@@ -208,7 +216,6 @@ img {
 }
 
 .product-selection__description {
-  margin-top: 96px;
   text-align: center;
   font-family: 'Montserrat';
   font-style: normal;
@@ -221,6 +228,10 @@ img {
   color: #131313;
 }
 
+// .modal-form__base-checkbox {
+//   display: none;
+// }
+
 // .product-selection__photo {
 //   position: absolute;
 //   top: -50px;
@@ -228,3 +239,6 @@ img {
 //   height: 132px;
 //   width: 132px;
 // }
+.modal-form__base-checkbox:checked .product-selection__position {
+  background-color: red;
+}

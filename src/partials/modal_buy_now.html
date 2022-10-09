@@ -7,10 +7,11 @@
     </button>
     <h2 class="modal-buy-now__header">Buy now</h2>
 
-    <ul class="product-selection__list">
-      <li class="product-selection__item">
+    <form class="modal-buy-now__form product-selection__list">
+      <label for="ice_cream" class="product-selection__item">
         <div
           class="product-selection__position product-selection__position--ice-cream"
+          tabindex="1"
         >
           <p class="product-selection__description">ice cream</p>
         </div>
@@ -65,10 +66,19 @@
             />
           </picture>
         </div>
-      </li>
-      <li class="product-selection__item">
+        <input
+          class="modal-form__base-checkbox"
+          type="checkbox"
+          name="ice_cream"
+          value="ice_cream"
+          id="ice_cream"
+        />
+      </label>
+
+      <label for="ice_coffee" class="product-selection__item">
         <div
           class="product-selection__position product-selection__position--ice-coffee"
+          tabindex="2"
         >
           <p class="product-selection__description">ice coffee</p>
         </div>
@@ -123,10 +133,19 @@
             />
           </picture>
         </div>
-      </li>
-      <li class="product-selection__item">
+        <input
+          class="modal-form__base-checkbox"
+          type="checkbox"
+          name="ice_coffee"
+          value="ice_coffee"
+          id="ice_coffee"
+        />
+      </label>
+
+      <label for="milkshake" class="product-selection__item">
         <div
           class="product-selection__position product-selection__position--milkshake"
+          tabindex="3"
         >
           <p class="product-selection__description">milkshake</p>
         </div>
@@ -181,37 +200,15 @@
             />
           </picture>
         </div>
-      </li>
-    </ul>
-
-    <form class="modal-buy-now__form">
-      <label class="modal-form__check">
         <input
           class="modal-form__base-checkbox"
           type="checkbox"
-          name="user_check"
-          value="ice_cream"
-          required
-        />
-      </label>
-      <label class="modal-form__check">
-        <input
-          class="modal-form__base-checkbox"
-          type="checkbox"
-          name="user_check"
-          value="ice_coffee"
-          required
-        />
-      </label>
-      <label class="modal-form__check">
-        <input
-          class="modal-form__base-checkbox"
-          type="checkbox"
-          name="user_check"
+          name="milkshakek"
           value="milkshake"
-          required
+          id="milkshake"
         />
       </label>
+
       <div class="modal-form__position-input">
         <input
           class="modal-form__input"
