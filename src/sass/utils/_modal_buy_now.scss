@@ -24,6 +24,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   width: 280px;
   padding: 28px 30px;
   background: #fcfcfc;
@@ -228,17 +229,12 @@ img {
   color: #131313;
 }
 
-// .modal-form__base-checkbox {
-//   display: none;
-// }
+.modal-form__base-checkbox {
+  display: none;
+}
 
-// .product-selection__photo {
-//   position: absolute;
-//   top: -50px;
-//   left: 0;
-//   height: 132px;
-//   width: 132px;
-// }
-.modal-form__base-checkbox:checked .product-selection__position {
-  background-color: red;
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
