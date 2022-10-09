@@ -1,0 +1,245 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-buy-now">
+    <button class="modal-buy-now__close-button" type="button" data-modal-close>
+      <svg class="modal-buy-now__close-icon">
+        <use href="./images/sprite.svg#icon_close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy-now__header">Buy now</h2>
+
+    <ul class="product-selection__list">
+      <li class="product-selection__item">
+        <div
+          class="product-selection__position product-selection__position--ice-cream"
+        >
+          <p class="product-selection__description">ice cream</p>
+        </div>
+        <div
+          class="product-selection__bg product-selection__bg--ice-cream"
+        ></div>
+        <div class="product-selection__img">
+          <picture>
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(min-width: 1200px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_1dt@1x.png 1x, ./images/prod_1dt@2x.png 2x"
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(min-width: 768px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_1tb@1x.png 1x, ./images/prod_1tb@1x.png 2x"
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(max-width: 767px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_1mb@1x.png 1x, ./images/prod_1mb@1x.png 2x"
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <img
+              class="product-selection__photo"
+              src="#"
+              alt="ice cream photo"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="product-selection__item">
+        <div
+          class="product-selection__position product-selection__position--ice-coffee"
+        >
+          <p class="product-selection__description">ice coffee</p>
+        </div>
+        <div
+          class="product-selection__bg product-selection__bg--ice-coffee"
+        ></div>
+        <div class="product-selection__img">
+          <picture>
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(min-width: 1200px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_2dt@1x.png 1x, ./images/prod_2dt@2x.png 2x"
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(min-width: 768px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_2tb@1x.png 1x, ./images/prod_2tb@1x.png 2x"
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(max-width: 767px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_2mb@1x.png 1x, ./images/prod_2mb@1x.png 2x"
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <img
+              class="product-selection__photo"
+              src="#"
+              alt="ice coffee photo"
+            />
+          </picture>
+        </div>
+      </li>
+      <li class="product-selection__item">
+        <div
+          class="product-selection__position product-selection__position--milkshake"
+        >
+          <p class="product-selection__description">milkshake</p>
+        </div>
+        <div
+          class="product-selection__bg product-selection__bg--milkshake"
+        ></div>
+        <div class="product-selection__img">
+          <picture>
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(min-width: 1200px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_3dt@1x.png 1x, ./images/prod_3dt@2x.png 2x"
+              media="(min-width: 1200px)"
+              type="image/jpeg"
+            />
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(min-width: 768px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_3tb@1x.png 1x, ./images/prod_3tb@1x.png 2x"
+              media="(min-width: 768px)"
+              type="image/jpeg"
+            />
+            <!-- <source
+            srcset="
+              ./images/# 1x,
+              ./images/# 2x
+            "
+            media="(max-width: 767px)"
+            tуpe="image/webp"
+          /> -->
+            <source
+              srcset="./images/prod_3mb@1x.png 1x, ./images/prod_3mb@1x.png 2x"
+              media="(max-width: 767px)"
+              type="image/jpeg"
+            />
+            <img
+              class="product-selection__photo"
+              src="#"
+              alt="ice milkshake photo"
+            />
+          </picture>
+        </div>
+      </li>
+    </ul>
+
+    <form class="modal-buy-now__form">
+      <label class="modal-form__check">
+        <input
+          class="modal-form__base-checkbox"
+          type="checkbox"
+          name="user_check"
+          value="ice_cream"
+          required
+        />
+      </label>
+      <label class="modal-form__check">
+        <input
+          class="modal-form__base-checkbox"
+          type="checkbox"
+          name="user_check"
+          value="ice_coffee"
+          required
+        />
+      </label>
+      <label class="modal-form__check">
+        <input
+          class="modal-form__base-checkbox"
+          type="checkbox"
+          name="user_check"
+          value="milkshake"
+          required
+        />
+      </label>
+      <div class="modal-form__position-input">
+        <input
+          class="modal-form__input"
+          type="text"
+          required
+          pattern="[a-zA-Zа]+"
+          name="user_name"
+          placeholder="Name"
+        />
+
+        <input
+          class="modal-form__input"
+          type="tel"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          name="user_phone"
+          placeholder="Phone"
+        />
+
+        <textarea
+          class="modal-form__user-message"
+          name="user_message"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button class="button modal-buy-now__button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
