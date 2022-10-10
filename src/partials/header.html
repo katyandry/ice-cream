@@ -1,5 +1,5 @@
 <header class="page-header">
-  <div class="container container--mobile-container">
+  <div class="container container__header container--mobile-container">
     <a class="logo" href="https://katyandry.github.io/ice-cream/">
       <picture>
         <!-- <source
@@ -50,38 +50,44 @@
           media="(max-width: 767px)"
           type="image/jpeg"
         />
-        <img class="logo__icon"
-        alt="сompany`s logo"/>
+        <img class="logo__icon" alt="сompany`s logo" />
       </picture>
-      <img class="logo__icon" srcset="./images/icon_logo_mb@1x.png 1x, ./images/icon_logo_mb@2x.png 2x" src="#"
-        alt="сompany`s logo" width="40" height="37" />
     </a>
-    <button class="button button__open-mobile-navigation" type="button" data-menu-open>
-      <svg class="button__open-icon" aria-label="open button" width="32" height="32">
+    <button
+      class="button button__open-mobile-navigation"
+      type="button"
+      data-menu-open
+    >
+      <svg
+        class="button__open-icon"
+        aria-label="open button"
+        width="32"
+        height="32"
+      >
         <use href="./images/sprite.svg#icon_burger"></use>
       </svg>
     </button>
     <nav class="navigation">
       <ul class="navigation__list list">
         <li class="navigation__item">
-          Home
-          <a name="Home" href="#"></a>
+          <a name="Home" href="#">Home</a>
         </li>
         <li class="navigation__item">
-          How its made?
-          <a name="about" href="#"></a>
+          <a name="about" href="#">How it's made?</a>
         </li>
         <li class="navigation__item">
-          Our products
-          <a name="products" href="#"></a>
+          <a name="products" href="#">Our products</a>
         </li>
         <li class="navigation__item">
-          Contact
-          <a name="contact" href="#"></a>
+          <a name="contact" href="#">Contact</a>
         </li>
       </ul>
     </nav>
-    <button class="button button--buy-now button__base" type="button" data-menu-open>
+    <button
+      class="button button--buy-now button__base"
+      type="button"
+      data-modal-open2
+    >
       Buy now
     </button>
   </div>
@@ -139,12 +145,20 @@
               media="(max-width: 767px)"
               type="image/jpeg"
             />
-            <img class="logo__icon"
-            alt="сompany`s logo"/>
+            <img class="logo__icon" alt="сompany`s logo" />
           </picture>
         </a>
-        <button class="mobile-navigation__close-button" type="button" data-menu-close>
-          <svg class="mobile-navigation__close-icon" aria-label="close-button" width="32" height="32">
+        <button
+          class="mobile-navigation__close-button"
+          type="button"
+          data-menu-close
+        >
+          <svg
+            class="mobile-navigation__close-icon"
+            aria-label="close-button"
+            width="32"
+            height="32"
+          >
             <use href="./images/sprite.svg#icon_close"></use>
           </svg>
         </button>
@@ -152,24 +166,24 @@
 
       <ul class="mobile-navigation__list list">
         <li class="mobile-navigation__item">
-          Home
-          <a name="Home" href="#"></a>
+          <a name="Home" href="#">Home</a>
         </li>
 
         <li class="mobile-navigation__item">
-          How its made?
-          <a name="about" href="#"></a>
+          <a name="about" href="#">How it's made?</a>
         </li>
         <li class="mobile-navigation__item">
-          Our products
-          <a name="products" href="#"></a>
+          <a name="products" href="#">Our products</a>
         </li>
         <li class="mobile-navigation__item">
-          Contact
-          <a name="contact" href="#"></a>
+          <a name="contact" href="#">Contact</a>
         </li>
       </ul>
-      <button class="button__base mobile-navigation--button" type="button" data-modal-open>
+      <button
+        class="button__base mobile-navigation--button"
+        type="button"
+        data-modal-open1
+      >
         Buy now
         <svg class="mobile-navigation--button-icon">
           <use href="./images/sprite.svg#icon_arrow_in_button"></use>
