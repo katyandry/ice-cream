@@ -1,3 +1,152 @@
 .hero {
+    position: relative;
     background-color: var(--primary-background-color);
+    padding-top: 60px;
+    padding-bottom: 240px;
+}
+
+.hero__title {
+    width: 250px;
+    font-style: normal;
+    font-family: var(--tittle-fonts);
+    font-size: 26px;
+    line-height: 1.27;
+    color: var(--primary-white-text-color);
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.hero__title-secondary {
+    font-size: 34px;
+    line-height: 0.97;
+}
+
+.hero__link {
+    display: flex;
+    align-items: center;
+}
+
+.hero__link-products {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    border: 2px solid var(--button-default-color);
+    border-radius: 8px;
+    padding: 7px 16px;
+    margin-right: 8px;
+
+    &:hover {
+        border: 2px solid var(--button-hover-focus-color);
+    }
+
+    &:focus {
+        border: 2px solid var(--button-hover-focus-color);
+        color: var(--primary-white-text-color);
+    }
+}
+
+.hero__link-how {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    color: var(--accsent-color);
+    padding-bottom: 0;
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--button-hover-focus-color);
+    }
+
+    &:focus {
+
+        color: var(--primary-white-text-color);
+    }
+}
+
+.hero__ownership {
+    display: none;
+}
+
+.hero__property {
+    display: none;
+}
+
+.hero__plate {
+    display: none;
+}
+
+.hero__ice-cream-info {
+    display: none;
+}
+
+.hero__arrow {
+    display: none;
+}
+
+.hero__arrow--hover {
+    display: none;
+}
+
+.hero__arrow--focus {
+    display: none;
+}
+
+
+.hero__ice-cream {
+
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: -64px;
+    left: 52px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 40px;
+        padding-bottom: 28px;
+    }
+
+    .hero__title {
+        font-size: 18px;
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .hero__title-secondary {
+        font-size: 24px;
+        line-height: 0.54;
+    }
+
+
+
+
+
+
+
+    .hero__content {
+        display: flex;
+        justify-content: space-between
+    }
+
+    .hero__ownership {
+        display: inline-block;
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 1.2;
+        text-align: right;
+        text-transform: uppercase;
+        width: 80px;
+    }
+
+    .hero__property {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        text-align: right;
+        color: var(--primary-white-text-color);
+    }
+
 }
