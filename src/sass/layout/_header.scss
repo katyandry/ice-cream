@@ -1,10 +1,11 @@
 .page-header {
   position: relative;
-  background-color: var(--primary-background-color);
+ 
 }
 
 .container__header {
   padding: 16px 20px;
+  background-color: var(--primary-background-color);
 }
 
 .logo__icon {
@@ -152,7 +153,8 @@
     line-height: 1.23;
   }
   .button--buy-now {
-    display: block;
+    display: flex;
+
     margin-left: 32px;
     margin-right: 0;
   }
