@@ -62,7 +62,7 @@
   }
 }
 
-.hero__ownership {
+.hero__amout-of-property {
   display: none;
 }
 
@@ -78,15 +78,15 @@
   display: none;
 }
 
-.hero__arrow {
+.hero__btn {
   display: none;
 }
 
-.hero__arrow--hover {
+.hero__btn--hover {
   display: none;
 }
 
-.hero__arrow--focus {
+.hero__btn--focus {
   display: none;
 }
 
@@ -96,6 +96,14 @@
   position: absolute;
   bottom: -64px;
   left: 52px;
+}
+
+.hero__dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
 }
 
 @media screen and (min-width: 768px) {
@@ -115,19 +123,28 @@
     line-height: 0.54;
   }
 
+  .hero__link {
+    margin-bottom: 28px;
+  }
+
   .hero__content {
     display: flex;
     justify-content: space-between;
   }
 
   .hero__ownership {
+    width: 80px;
+    text-align: right;
+  }
+
+  .hero__amout-of-property {
     display: inline-block;
     font-weight: 900;
     font-size: 46px;
     line-height: 1.2;
-    text-align: right;
+
     text-transform: uppercase;
-    width: 80px;
+
   }
 
   .hero__property {
@@ -137,5 +154,87 @@
     line-height: 1.2;
     text-align: right;
     color: var(--primary-white-text-color);
+  }
+
+  .hero__plate-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__plate {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 33px;
+  }
+
+  .hero__ice-cream-info {
+    display: inline-block;
+    width: 150px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--primary-white-text-color);
+  }
+
+  .hero__btn {
+    display: block;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      display: none;
+    }
+  }
+
+  .hero__arrow {
+    display: block;
+    fill: var(--primary-white-text-color);
+    width: 40px;
+    height: 10px;
+  }
+
+
+  .hero__btn--hover:hover {
+    background-color: transparent;
+    display: block;
+    width: 40px;
+    height: 10px;
+  }
+
+  .hero__arrow--focus:focus {
+    background-color: transparent;
+    display: block;
+    fill: var(--primary-white-text-color);
+    width: 40px;
+    height: 10px;
+  }
+
+  .hero__ice-cream {
+    width: 50%;
+    height: 125%;
+    bottom: -42px;
+    left: 345px;
+  }
+
+  .hero__dots {
+    bottom: 22px;
+    left: -7px;
+    width: 100%;
+    height: 18%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__ice-cream {
+    width: 30%;
+    height: 80%;
+    bottom: -2px;
+    left: 668px;
+  }
+
+  .hero__dots {
+    bottom: 0;
+    left: -3px;
+    width: 100%;
+    height: 71%;
   }
 }
