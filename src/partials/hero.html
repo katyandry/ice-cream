@@ -1,66 +1,84 @@
-<section class="hero container">
-        <div class="hero__content">
-                <div>
-                        <h1 class="hero__title">ice cream
-                                made with
-                                <span class="hero__title-secondary">passion</span>
-                        </h1>
-                        <div class="hero__link">
-                                <a class="hero__link-products" href="#products">Products</a>
-                                <a class="hero__link-how" href="#how">How it’s made?</a>
-                        </div>
-                        <div class="hero__plate-info">
-                                <picture>
-                                        <source srcset="./images/hero_plate_dt@1x.jpg 1x, ./images/hero_plate_dt@2x.jpg 2x "
-                                                media="(min-width: 1200px)">
-                                        <source srcset="./images/hero_plate_tb@1x.jpg 1x, ./images/hero_plate_tb@2x.jpg 2x "
-                                                media="(min-width: 768px)">
-                                        <img class="hero__plate" src="./images/hero_plate_tb@1x.jpg"
-                                                alt="a plate with ice cream">
-                                </picture>
-                                <div>
-                                        <p class="hero__ice-cream-info">Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit, sed do
-                                                eiusmod tempor incididunt ut labore et</p>
-                                        <button class="hero__btn" type="button"><svg class="hero__arrow"
-                                                        aria-label="arrow" with="40">
-                                                        <use href="./images/sprite.svg#icon_arrow_def"></use>
-                                                </svg></button>
-                                        <button class="hero__btn--hover" type="button"><svg class="hero__arrow"
-                                                        aria-label="arrow" with="40">
-                                                        <use href="./images/sprite.svg#icon_arrow_hover"></use>
-                                                </svg></button>
-                                        <button class="hero__btn--focus" type="button"><svg class="hero__arrow"
-                                                        aria-label="arrow" with="40">
-                                                        <use href="./images/sprite.svg#icon_arrow_focus"></use>
-                                                </svg></button>
+<section class="hero ">
+        <div class="container hero__container">
+                <div class="hero__content">
+                        <div>
+                                <h1 class="hero__title">ice cream
+                                        made with
+                                        <span class="hero__title-secondary">passion</span>
+                                </h1>
+                                <div class="hero__link">
+                                        <a class="hero__link-products"
+                                           href="#products">Products</a>
+                                        <a class="hero__link-how"
+                                           href="#how">How it’s made?</a>
+                                </div>
+                                <div class="hero__plate-info">
+                                        <picture>
+                                                <source srcset="./images/hero_plate_dt@1x.jpg 1x, ./images/hero_plate_dt@2x.jpg 2x "
+                                                        media="(min-width: 1200px)">
+                                                <source srcset="./images/hero_plate_tb@1x.jpg 1x, ./images/hero_plate_tb@2x.jpg 2x "
+                                                        media="(min-width: 768px)">
+                                                <img class="hero__plate"
+                                                     src="./images/hero_plate_tb@1x.jpg"
+                                                     alt="a plate with ice cream">
+                                        </picture>
+                                        <div>
+                                                <p class="hero__ice-cream-info">Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit, sed do
+                                                        eiusmod tempor incididunt ut labore et</p>
+                                                <button class="hero__btn"
+                                                        type="button"><svg class="hero__arrow"
+                                                             aria-label="arrow"
+                                                             with="40">
+                                                                <use href="./images/sprite.svg#icon_arrow_def"></use>
+                                                        </svg></button>
+                                                <button class="hero__btn--hover"
+                                                        type="button"><svg class="hero__arrow"
+                                                             aria-label="arrow"
+                                                             with="40">
+                                                                <use href="./images/sprite.svg#icon_arrow_hover"></use>
+                                                        </svg></button>
+                                                <button class="hero__btn--focus"
+                                                        type="button"><svg class="hero__arrow"
+                                                             aria-label="arrow"
+                                                             with="40">
+                                                                <use href="./images/sprite.svg#icon_arrow_focus"></use>
+                                                        </svg></button>
+                                        </div>
                                 </div>
                         </div>
+                        <ul class="hero__ownership">
+                                <li>
+                                        <p class="hero__amout-of-property">16</p>
+                                        <p class="hero__property"> cafes</p>
+                                </li>
+                                <li>
+                                        <p class="hero__amout-of-property">23</p>
+                                        <p class="hero__property"> food trucks</p>
+                                </li>
+                        </ul>
                 </div>
-                <ul class="hero__ownership">
-                        <li>
-                                <p class="hero__amout-of-property">16</p>
-                                <p class="hero__property"> cafes</p>
-                        </li>
-                        <li>
-                                <p class="hero__amout-of-property">23</p>
-                                <p class="hero__property"> food trucks</p>
-                        </li>
-                </ul>
+                <picture>
+                        <source srcset="./images/dots_dt@1x.png 1x, ./images/dots_dt@2x.png 2x"
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/dots_tb@1x.png 1x, ./images/dots_tb@2x.png 2x "
+                                media="(min-width: 768px)">
+                        <source srcset="./images/dots_mb@1x.png 1x, ./images/dots_mb@2x.png 2x "
+                                media="(max-width: 767px)">
+                        <img class="hero__dots"
+                             src="./images/dots_dt@2x.png"
+                             alt="dots">
+                </picture>
+                <picture>
+                        <source srcset="./images/hero_horn_dt@1x.png 1x, ./images/hero_horn_dt@2x.png 2x"
+                                media="(min-width: 1200px)">
+                        <source srcset="./images/hero_horn_tb@1x.png 1x, ./images/hero_horn_tb@2x.png 2x "
+                                media="(min-width: 768px)">
+                        <source srcset="./images/hero_horn_mb@1x.png 1x, ./images/hero_horn_mb@1x.png 2x "
+                                media="(max-width: 767px)">
+                        <img class="hero__ice-cream"
+                             src="./images/hero_horn_mb@1x.png"
+                             alt="ice cream">
+                </picture>
         </div>
-        <picture>
-                <source srcset="./images/dots_dt@1x.png 1x, ./images/dots_dt@2x.png 2x" media="(min-width: 1200px)">
-                <source srcset="./images/dots_tb@1x.png 1x, ./images/dots_tb@2x.png 2x " media="(min-width: 768px)">
-                <source srcset="./images/dots_mb@1x.png 1x, ./images/dots_mb@2x.png 2x " media="(max-width: 767px)">
-                <img class="hero__dots" src="./images/dots_dt@2x.png" alt="dots">
-        </picture>
-        <picture>
-                <source srcset="./images/hero_horn_dt@1x.png 1x, ./images/hero_horn_dt@2x.png 2x"
-                        media="(min-width: 1200px)">
-                <source srcset="./images/hero_horn_tb@1x.png 1x, ./images/hero_horn_tb@2x.png 2x "
-                        media="(min-width: 768px)">
-                <source srcset="./images/hero_horn_mb@1x.png 1x, ./images/hero_horn_mb@1x.png 2x "
-                        media="(max-width: 767px)">
-                <img class="hero__ice-cream" src="./images/hero_horn_mb@1x.png" alt="ice cream">
-        </picture>
 </section>
