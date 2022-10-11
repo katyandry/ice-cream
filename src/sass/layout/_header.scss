@@ -1,6 +1,5 @@
 .page-header {
   position: relative;
- 
 }
 
 .container__header {
@@ -33,8 +32,6 @@
 .navigation {
   display: none;
 }
-
-
 
 .mobile-navigation__close-button {
   background-color: inherit;
@@ -208,8 +205,8 @@
   color: var(--primary-white-text-color);
   transition: color var(--timing-functione) 250ms;
 
-
-  &:focus, &:hover{
+  &:focus,
+  &:hover {
     color: var(--accsent-color);
   }
 }
