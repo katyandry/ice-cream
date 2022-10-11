@@ -1,0 +1,37 @@
+.gallery-section {
+    background-color: var(--primary-background-color);
+    position: relative;
+}
+
+
+.gallery-section__picture {
+  
+
+}
+
+.gallery-section__imeg {
+position: absolute;
+top: -24px;
+left: 50%;
+translate: -50%;
+
+border-radius: 24px;
+
+
+    z-index: 2;
+
+   
+}
+
+ @media screen and (min-width:768px) {
+    .gallery-section__imeg {
+        top: -163px;
+    }
+ }
+
+  @media screen and (min-width:1200px) {
+      .gallery-section__imeg {
+          top: -94px;
+      }
+  }
+ 
