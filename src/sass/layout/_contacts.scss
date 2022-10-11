@@ -2,8 +2,10 @@
   display: none;
 }
 
-.contacts__container {
+.contacts {
   background-color: var(--primary-background-color);
+}
+.contacts__container {
   position: relative;
 }
 
