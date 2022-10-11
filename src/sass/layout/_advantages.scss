@@ -2,14 +2,29 @@
   background-color: var(--primary-background-color);
 }
 
+.conteiner-advantages {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+
+
+.advantages-list__item {
+
+  margin-bottom: 18px;
+
+    &:last-child {
+        margin-bottom: 0;
+      }
+}
+
 .icon-cow::before {
-  // content:"c";
-  // background: url(../images/Icon_cow@1x.png) no-repeat;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 
-  margin-left: 194px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 16px;
 
   content: url('../images/Icon_cow@1x.png');
@@ -24,7 +39,8 @@
   justify-content: center;
   align-items: flex-end;
 
-  margin-left: 194px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 16px;
 
   content: url('../images/icon_weight@1x.png');
@@ -39,7 +55,8 @@
   justify-content: center;
   align-items: flex-end;
 
-  margin-left: 194px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 16px;
 
   content: url('../images/icon_ice_crema@1x.png');
@@ -52,7 +69,7 @@
 .advantages__tittle {
   color: var(--primary-white-text-color);
 
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -74,5 +91,62 @@
   line-height: 170%;
   text-align: center;
 
-  margin: 0 45px 18px 45px;
 }
+
+@media  screen and (min-width:768px) {
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+    .advantages-list__item {
+      width: calc((100% - 80px * 2) / 3);
+
+    }
+    .conteiner-advantages{
+      padding: 53px 76px 204px;
+    }
+
+   .advantages__tittle {
+   font-size: 48px;
+     line-height: 1.22;
+ }
+
+  .advantages__text{
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 174%;
+  }
+   
+
+
+}
+
+@media screen and (min-width:1200px) {
+  .conteiner-advantages {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+    .advantages-list__item {
+    width: calc((100% - 32px * 2) / 3);
+    
+  }
+
+  .advantages__tittle {
+  font-size: 58px;
+  line-height: 1.22;
+  }
+
+    .advantages__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 176%;
+   }
+
+  .conteiner-advantages {
+  padding: 60px 16px 180px;
+  }
+
+  
+  
+}
+
