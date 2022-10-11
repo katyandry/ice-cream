@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px;
+
 }
 
 .reviews {
@@ -25,8 +25,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .reviews {
     background-image: url(./../images/bcg_block4@2x.png);
   }
@@ -55,33 +55,13 @@
 }
 
 .reviews__btn {
-  position: absolute;
-  top: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  height: 30%;
-  background-color: transparent;
-  border: none;
-  outline: none;
-  transform: translateY(-50%);
-  cursor: pointer;
-  user-select: none;
-}
-
-.reviews__btn_prev {
-  left: 0;
-}
-
-.reviews__btn_next {
-  right: 0;
+  display: none;
 }
 
 .reviews__indicators {
   position: absolute;
   right: 0;
-  bottom: 465px;
+  bottom: 382px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -145,6 +125,30 @@
     padding-bottom: 427px;
   }
 
+  .reviews__btn {
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 30%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .reviews__btn_prev {
+    left: 0;
+  }
+
+  .reviews__btn_next {
+    right: 0;
+  }
+
   .slider__reviews {
     padding: 28px 80px;
     font-style: normal;
@@ -163,7 +167,7 @@
   }
 
   .reviews__indicators {
-    bottom: 475px;
+    bottom: 424px;
   }
 }
 
