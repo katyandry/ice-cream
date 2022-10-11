@@ -17,6 +17,12 @@
     flex-direction: row;
     top: -315px;
   }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    flex-direction: row;
+    top: -95px;
+  }
 }
 
 .contacts__item {
@@ -372,7 +378,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 506px;
+    margin-top: 478px;
     margin-bottom: 120px;
   }
 }
