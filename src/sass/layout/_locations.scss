@@ -1,16 +1,16 @@
 .modal--locations {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal__map {
-    border-radius: 10px;
-    width: 224px;
-    height: 199px;
+  border-radius: 10px;
+  width: 224px;
+  height: 199px;
 
-    @media screen and (min-width: 768px) {
-        width: 448px;
-        height: 260px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+  }
 }
