@@ -1,8 +1,45 @@
 <header class="page-header">
-  <div class="container container--mobile-container">
+  <div class="container container__header container--mobile-container">
     <a class="logo" href="https://katyandry.github.io/ice-cream/">
-      <img class="logo__icon" srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x" src="#"
-        alt="сompany`s logo" width="40" height="37" />
+      <picture>
+        <!-- <source
+      srcset="
+        ./images/# 1x,
+        ./images/# 2x
+      "
+      media="(min-width: 1200px)"
+      tуpe="image/webp"
+    /> -->
+        <source srcset="
+            ./images/icon_logo_dt@1x.png 1x,
+            ./images/icon_logo_dt@2x.png 2x
+          " media="(min-width: 1200px)" type="image/jpeg" />
+        <!-- <source
+      srcset="
+        ./images/# 1x,
+        ./images/# 2x
+      "
+      media="(min-width: 768px)"
+      tуpe="image/webp"
+    /> -->
+        <source srcset="
+            ./images/icon_logo_tb@1x.png 1x,
+            ./images/icon_logo_tb@2x.png 2x
+          " media="(min-width: 768px)" type="image/jpeg" />
+        <!-- <source
+      srcset="
+        ./images/# 1x,
+        ./images/# 2x
+      "
+      media="(max-width: 767px)"
+      tуpe="image/webp"
+    /> -->
+        <source srcset="
+            ./images/icon_logo_mb@1x.png 1x,
+            ./images/icon_logo_mb@2x.png 2x
+          " media="(max-width: 767px)" type="image/jpeg" />
+        <img class="logo__icon" alt="сompany`s logo" />
+      </picture>
     </a>
     <button class="button button__open-mobile-navigation" type="button" data-menu-open>
       <svg class="button__open-icon" aria-label="open button" width="32" height="32">
@@ -12,34 +49,70 @@
     <nav class="navigation">
       <ul class="navigation__list list">
         <li class="navigation__item">
-          Home
-          <a name="Home" href="#"></a>
+          <a class="navigation__link" name="Home" href="#">Home</a>
         </li>
         <li class="navigation__item">
-          How its made?
-          <a name="about" href="#"></a>
+          <a class="navigation__link" name="about" href="#">How it's made?</a>
         </li>
         <li class="navigation__item">
-          Our products
-          <a name="products" href="#"></a>
+          <a class="navigation__link" name="products" href="#">Our products</a>
         </li>
         <li class="navigation__item">
-          Contact
-          <a name="contact" href="#"></a>
+          <a class="navigation__link" name="contact" href="#">Contact</a>
         </li>
       </ul>
     </nav>
-    <button class="button button--buy-now button__base" type="button">
+    <button class="button button--buy-now button__base" type="button" data-modal-open2>
       Buy now
+      <svg class="mobile-navigation--button-icon">
+        <use href="./images/sprite.svg#icon_buy-now"></use>
+      </svg>
     </button>
   </div>
 
   <div class="mobile-navigation" data-menu>
-    <div class="container">
+    <div class="container__header">
       <div class="mobile-navigation__container">
         <a class="logo" href="https://katyandry.github.io/ice-cream/">
-          <img class="logo__icon" srcset="./images/icon_logo@1x.png 1x, ./images/icon_logo@2x.png 2x" src="#"
-            alt="сompany`s logo" width="40" height="37" />
+          <picture>
+            <!-- <source
+          srcset="
+            ./images/# 1x,
+            ./images/# 2x
+          "
+          media="(min-width: 1200px)"
+          tуpe="image/webp"
+        /> -->
+            <source srcset="
+                ./images/icon_logo_dt@1x.png 1x,
+                ./images/icon_logo_dt@2x.png 2x
+              " media="(min-width: 1200px)" type="image/jpeg" />
+            <!-- <source
+          srcset="
+            ./images/# 1x,
+            ./images/# 2x
+          "
+          media="(min-width: 768px)"
+          tуpe="image/webp"
+        /> -->
+            <source srcset="
+                ./images/icon_logo_tb@1x.png 1x,
+                ./images/icon_logo_tb@2x.png 2x
+              " media="(min-width: 768px)" type="image/jpeg" />
+            <!-- <source
+          srcset="
+            ./images/# 1x,
+            ./images/# 2x
+          "
+          media="(max-width: 767px)"
+          tуpe="image/webp"
+        /> -->
+            <source srcset="
+                ./images/icon_logo_mb@1x.png 1x,
+                ./images/icon_logo_mb@2x.png 2x
+              " media="(max-width: 767px)" type="image/jpeg" />
+            <img class="logo__icon" alt="сompany`s logo" />
+          </picture>
         </a>
         <button class="mobile-navigation__close-button" type="button" data-menu-close>
           <svg class="mobile-navigation__close-icon" aria-label="close-button" width="32" height="32">
@@ -50,27 +123,23 @@
 
       <ul class="mobile-navigation__list list">
         <li class="mobile-navigation__item">
-          Home
-          <a name="Home" href="#"></a>
+          <a name="Home" href="#">Home</a>
         </li>
 
         <li class="mobile-navigation__item">
-          How its made?
-          <a name="about" href="#"></a>
+          <a name="about" href="#">How it's made?</a>
         </li>
         <li class="mobile-navigation__item">
-          Our products
-          <a name="products" href="#"></a>
+          <a name="products" href="#">Our products</a>
         </li>
         <li class="mobile-navigation__item">
-          Contact
-          <a name="contact" href="#"></a>
+          <a name="contact" href="#">Contact</a>
         </li>
       </ul>
-      <button class="button__base mobile-navigation--button" type="button">
+      <button class="button__base mobile-navigation--button" type="button" data-modal-open1>
         Buy now
         <svg class="mobile-navigation--button-icon">
-          <use href="./images/sprite.svg#icon_arrow_in_button"></use>
+          <use href="./images/sprite.svg#icon_buy-now"></use>
         </svg>
       </button>
     </div>
