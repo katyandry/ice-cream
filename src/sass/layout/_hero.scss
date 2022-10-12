@@ -1,7 +1,6 @@
 .hero {
   background-color: var(--primary-background-color);
-  padding-top: 60px;
-  // padding-top: 110px;
+  padding-top: 110px;
   padding-bottom: 240px;
 }
 
@@ -92,25 +91,25 @@
 
 
 .hero__ice-cream {
-  width: 72%;
-  height: 232%;
+  width: 276px;
+  height: 329px;
   position: absolute;
-  bottom: -301px;
-  left: 70px;
+  bottom: -293px;
+  left: 37px;
 }
 
 .hero__dots {
-  width: 100%;
-  height: 41%;
+  width: 320px;
+  height: 46px;
   position: absolute;
   bottom: -240px;
-  left: 0;
+  left: 0px;
+
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 40px;
-    // padding-top: 94px;
+    padding-top: 90px;
     padding-bottom: 28px;
   }
 
@@ -185,41 +184,47 @@
     padding: 0;
 
   }
-}
-
-.hero__arrow {
-  display: block;
-  fill: var(--primary-white-text-color);
-  width: 40px;
-  height: 10px;
-  margin-left: -6px;
-  transition: transform var(--timing-functione) 250ms;
 
 
-  &:hover,
-  &:focus {
-    transform: scale(1.2);
+  .hero__arrow {
+    display: block;
+    fill: var(--primary-white-text-color);
+    width: 40px;
+    height: 10px;
+    margin-left: -6px;
+    transition: transform var(--timing-functione) 250ms;
+
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
+
+
+  .hero__ice-cream {
+    width: 49%;
+    height: 145%;
+    bottom: -70px;
+    left: 340px;
+  }
+
+  .hero__dots {
+    width: 100%;
+    height: 20%;
+    bottom: -6px;
+    left: -25px;
+
   }
 }
 
 
-
-.hero__ice-cream {
-  width: 50%;
-  height: 125%;
-  bottom: -42px;
-  left: 345px;
-}
-
-.hero__dots {
-  bottom: 22px;
-  left: -21px;
-  width: 100%;
-  height: 18%;
-}
-
-
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 118px;
+  }
+
   .hero__title {
     width: 370px;
     font-size: 38px;
@@ -272,7 +277,4 @@
 
   }
 
-  //   .hero {
-  //   padding-top: 118px;
-  // }
 }
