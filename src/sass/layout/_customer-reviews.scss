@@ -15,7 +15,7 @@
 
 .reviews {
   position: relative;
-  padding-bottom: 400px;
+  padding-bottom: 445px;
   padding-top: 180px;
   margin-right: auto;
   margin-left: auto;
@@ -60,7 +60,7 @@
 .reviews__indicators {
   position: absolute;
   right: 0;
-  bottom: 382px;
+  bottom: 434px;
   left: 0;
   display: flex;
   justify-content: center;
@@ -74,8 +74,8 @@
   flex: 0 1 auto;
   width: 12px;
   height: 12px;
-  margin-right: 3px;
-  margin-left: 3px;
+  margin-right: 9px;
+  margin-left: 9px;
   background-color: #d9d9d9;
   border-radius: 50%;
   cursor: pointer;
@@ -170,7 +170,7 @@
   }
 
   .reviews__indicators {
-    bottom: 418px;
+    bottom: 420px;
   }
 }
 
@@ -185,7 +185,7 @@
   }
 
   .reviews__indicators {
-    bottom: 2243px;
+    bottom: 243px;
   }
 
   .slider__photo-customer {
