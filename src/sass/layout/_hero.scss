@@ -1,6 +1,7 @@
 .hero {
   background-color: var(--primary-background-color);
   padding-top: 60px;
+  // padding-top: 110px;
   padding-bottom: 240px;
 }
 
@@ -114,6 +115,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 40px;
+    // padding-top: 94px;
     padding-bottom: 28px;
   }
 
@@ -240,4 +242,7 @@
     bottom: -5px;
     left: -3px;
   }
+  //   .hero {
+  //   padding-top: 118px;
+  // }
 }
