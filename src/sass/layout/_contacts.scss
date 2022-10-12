@@ -73,7 +73,7 @@
 .contacts__item__up {
   @media screen and (max-width: 768px) {
     position: absolute;
-    top: -125px;
+    top: -155px;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -98,7 +98,7 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.37;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-black-text-color);
@@ -106,6 +106,7 @@
   @media screen and (min-width: 768px) {
     height: 28px;
     font-size: 16px;
+    line-height: 1.86;
   }
 }
 

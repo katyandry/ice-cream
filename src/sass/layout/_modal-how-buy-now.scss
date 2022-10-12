@@ -10,7 +10,7 @@
   visibility: visible;
   pointer-events: auto;
   transition: opacity var(--timing-functione) 250ms,
-    visiability var(--timing-functione) 250ms;
+    visibility var(--timing-functione) 250ms;
 }
 
 .is-hidden {
@@ -224,11 +224,11 @@
   color: var(--primary-black-text-color);
 }
 
-.modal-form__base-checkbox {
+.modal-form__radio {
   display: none;
 }
 
-.modal-form__base-checkbox:checked + .product-selection__position {
+.modal-form__radio:checked + .product-selection__position {
   background-color: var(--product-yellow-bg-color);
 }
 
