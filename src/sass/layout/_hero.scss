@@ -1,3 +1,280 @@
 .hero {
-    background-color: var(--primary-background-color);
+  background-color: var(--primary-background-color);
+  padding-top: 110px;
+  padding-bottom: 240px;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.hero__title {
+  width: 250px;
+  font-style: normal;
+  font-family: var(--tittle-fonts);
+  font-size: 26px;
+  line-height: 1.27;
+  color: var(--primary-white-text-color);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.hero__title-secondary {
+  font-size: 34px;
+  line-height: 0.97;
+}
+
+.hero__link {
+  display: flex;
+  align-items: center;
+}
+
+.hero__link-products {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+  border: 2px solid var(--button-default-color);
+  border-radius: 8px;
+  padding: 7px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: color var(--timing-functione) 250ms, border var(--timing-functione) 250ms;
+
+  &:hover {
+    border: 2px solid var(--button-hover-focus-color);
+  }
+
+  &:focus {
+    border: 2px solid var(--button-hover-focus-color);
+    color: var(--primary-white-text-color);
+  }
+}
+
+.hero__link-how {
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  color: var(--accsent-color);
+  padding-bottom: 0;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color var(--timing-functione) 250ms;
+
+  &:hover {
+    color: var(--button-hover-focus-color);
+  }
+
+  &:focus {
+    color: var(--primary-white-text-color);
+  }
+}
+
+.hero__amout-of-property {
+  display: none;
+}
+
+.hero__property {
+  display: none;
+}
+
+.hero__plate {
+  display: none;
+}
+
+.hero__ice-cream-info {
+  display: none;
+}
+
+.hero__btn {
+  display: none;
+}
+
+
+.hero__ice-cream {
+  width: 276px;
+  height: 329px;
+  position: absolute;
+  bottom: -293px;
+  left: 37px;
+}
+
+.hero__dots {
+  width: 320px;
+  height: 46px;
+  position: absolute;
+  bottom: -240px;
+  left: 0px;
+
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 90px;
+    padding-bottom: 28px;
+  }
+
+  .hero__title {
+    font-size: 18px;
+    width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .hero__title-secondary {
+    font-size: 24px;
+    line-height: 0.54;
+  }
+
+  .hero__link {
+    margin-bottom: 28px;
+  }
+
+  .hero__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  }
+
+  .hero__ownership {
+    width: 80px;
+    text-align: right;
+  }
+
+  .hero__amout-of-property {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+  }
+
+  .hero__property {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: right;
+    color: var(--primary-white-text-color);
+  }
+
+  .hero__plate-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero__plate {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 33px;
+  }
+
+  .hero__ice-cream-info {
+    display: inline-block;
+    width: 150px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--primary-white-text-color);
+    margin-bottom: 32px;
+  }
+
+  .hero__btn {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+
+  }
+
+
+  .hero__arrow {
+    display: block;
+    fill: var(--primary-white-text-color);
+    width: 40px;
+    height: 10px;
+    margin-left: -6px;
+    transition: transform var(--timing-functione) 250ms;
+
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
+
+
+  .hero__ice-cream {
+    width: 49%;
+    height: 145%;
+    bottom: -70px;
+    left: 340px;
+  }
+
+  .hero__dots {
+    width: 100%;
+    height: 20%;
+    bottom: -6px;
+    left: -25px;
+
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 118px;
+  }
+
+  .hero__title {
+    width: 370px;
+    font-size: 38px;
+    line-height: 1.26;
+    margin-bottom: 28px;
+    margin-bottom: 42px;
+  }
+
+  .hero__title-secondary {
+    font-size: 38px;
+    line-height: 1.26;
+  }
+
+  .hero__link-products {
+
+    font-size: 14px;
+    line-height: 1.28;
+    padding: 12px 34px;
+    border-radius: 10px;
+    margin-right: 34px;
+  }
+
+  .hero__link-how {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .hero__plate {
+    margin-right: 14px;
+  }
+
+  .hero__ice-cream-info {
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .hero__ice-cream {
+    filter: drop-shadow(0 0 3.75rem rgba(252, 252, 252, .44));
+    width: 41%;
+    height: 103%;
+    bottom: -28px;
+    left: 610px;
+  }
+
+  .hero__dots {
+    width: 100%;
+    height: 73%;
+    bottom: -26px;
+    left: -2px;
+
+  }
+
 }
