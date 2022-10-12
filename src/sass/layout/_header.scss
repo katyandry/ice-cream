@@ -1,10 +1,17 @@
 .page-header {
-  position: relative;
-  background-color: var(--primary-background-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 10;
 }
 
 .container__header {
+  display: flex;
+  flex-direction: column;
   padding: 16px 20px;
+  height: 100vh;
+  background-color: var(--primary-background-color);
 }
 
 .logo__icon {
@@ -16,10 +23,7 @@
 .button__open-mobile-navigation {
   background-color: inherit;
   border: none;
-
-  // &:focus, &:hover{
-  //   fill:var(--accsent-color)
-  // }
+  padding: 0;
 }
 
 .position {
@@ -31,6 +35,7 @@
 .container--mobile-container {
   display: flex;
   justify-content: space-between;
+  padding: 16px 20px;
 }
 
 .navigation {
@@ -40,6 +45,7 @@
 .mobile-navigation__close-button {
   background-color: inherit;
   border: none;
+  padding: 0;
   fill: #fff;
 }
 
@@ -122,19 +128,20 @@
 .mobile-navigation__container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 52px;
 }
 
-.mobile-navigation--button {
-  margin-bottom: 63px;
+.position-list-btn {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mobile-navigation {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 15;
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   background-color: var(--primary-background-color);
   transform: translateX(-100%);
   visibility: hidden;
@@ -151,7 +158,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .header__container {
     padding: 32px 24px;
   }
 
@@ -170,7 +177,6 @@
   }
   .button--buy-now {
     display: flex;
-
     margin-left: 32px;
     margin-right: 0;
   }
@@ -185,11 +191,16 @@
   .mobile-navigation__container {
     margin-bottom: 76px;
   }
+
+  .mobile-navigation__list {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container__header {
+  .container--mobile-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 28px 16px;
@@ -198,6 +209,10 @@
   .logo__icon {
     width: 60px;
     height: 65px;
+  }
+
+  .button--buy-now {
+    margin-left: 0;
   }
 
   .navigation {
