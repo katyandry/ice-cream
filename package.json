@@ -5,7 +5,8 @@
   "homepage": "https://katyandry.github.io/ice-cream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream/"
+    "build": "parcel build src/*.html --public-url /ice-cream/",
+    "start:force": "rm -r ./.parcel-cache ./dist ./node_modules && npm i --reset-cache && npm start"
   },
   "repository": {
     "type": "git",
