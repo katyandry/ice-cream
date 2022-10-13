@@ -92,14 +92,14 @@
     box-shadow: 0 -21.82px 0 0 rgba(248, 210, 78, 0.8);
     border-radius: 50%;
     margin-bottom: 40px;
-  
+
     @media screen and (max-width: 767px) {
       width: 279px;
       height: 279px;
     }
 
     @media screen and (min-width: 768px) {
-    //   box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
+      //   box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
       // border-radius: 165.879px;
       box-shadow: 0 -25.88px 0 0 rgba(248, 210, 78, 0.8);
       width: 330px;
@@ -118,7 +118,7 @@
       margin-bottom: 107.88px;
     }
   }
-  
+
   &__card {
     // position: absolute;
     top: 0;
@@ -230,7 +230,7 @@
       font-size: 14px;
       line-height: 1.928;
     }
-    }
+  }
 
   &__btn {
     @media screen and (max-width: 767px) {
@@ -243,8 +243,8 @@
 .about__box {
   // margin-left: 100px;
   @media screen and (max-width: 767px) {
-      margin-left: 0px;
-    }
+    margin-left: 0px;
+  }
 
 }
 
