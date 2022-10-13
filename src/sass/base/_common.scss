@@ -40,3 +40,7 @@ body {
   letter-spacing: 0.04em;
   background-color: var(--primary-white-text-color);
 }
+
+.no-scroll {
+  overflow: hidden;
+}
