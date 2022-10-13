@@ -1,14 +1,14 @@
 .about {
   padding-top: 60px;
-  padding-bottom: 32px;
+  padding-bottom: 42px;
   background-color: var(--primary-background-color);
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 62px;
+    padding-bottom: 53px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 79px;
+    padding-bottom: 62px;
   }
 
   &__lable {
@@ -115,7 +115,6 @@
       width: 500px;
       height: 500px;
       margin-right: 100px;
-      margin-bottom: 107.88px;
     }
   }
 
