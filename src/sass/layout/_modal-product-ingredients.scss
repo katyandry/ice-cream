@@ -141,6 +141,12 @@
   &__button {
     width: 132px;
     height: 42px;
+    transition: 250ms var(--timing-functione);
+
+    &:hover,
+    &:focus {
+      color: var(--primary-white-text-color);
+    }
   }
 }
 
