@@ -30,30 +30,34 @@
 }
 
 .hero__link-products {
+  display: block;
   font-weight: 600;
   font-size: 8px;
   line-height: 1.25;
   border: 2px solid var(--button-default-color);
+  color: var(--primary-black-text-color);
   border-radius: 8px;
   padding: 7px 16px;
   margin-right: 8px;
   cursor: pointer;
-  transition: color var(--timing-functione) 250ms, border var(--timing-functione) 250ms;
+  transition: border var(--timing-functione) 250ms, color var(--timing-functione) 250ms;
 
   &:hover {
     border: 2px solid var(--button-hover-focus-color);
   }
 
   &:focus {
-    border: 2px solid var(--button-hover-focus-color);
     color: var(--primary-white-text-color);
+    border: 2px solid var(--button-hover-focus-color);
+
   }
 }
 
 .hero__link-how {
+  display: block;
   font-weight: 600;
   font-size: 8px;
-  line-height: 10px;
+  line-height: 1.25;
   color: var(--accsent-color);
   padding-bottom: 0;
   text-decoration: underline;
@@ -141,19 +145,19 @@
   }
 
   .hero__amout-of-property {
-    display: inline-block;
+    display: block;
     font-weight: 900;
-    font-size: 46px;
+    font-size: 28px;
     line-height: 1.2;
 
     text-transform: uppercase;
   }
 
   .hero__property {
-    display: inline-block;
+    display: block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 8px;
+    line-height: 1.25;
     text-align: right;
     color: var(--primary-white-text-color);
   }
@@ -197,7 +201,7 @@
 
     &:hover,
     &:focus {
-      transform: scale(1.2);
+      transform: scale(1.5);
     }
   }
 
@@ -259,6 +263,19 @@
   .hero__ice-cream-info {
     font-size: 14px;
     width: 200px;
+  }
+
+  .hero__ownership {
+    width: 90px;
+  }
+
+  .hero__amout-of-property {
+    font-size: 46px;
+  }
+
+  .hero__property {
+    font-size: 14px;
+    line-height: 1.2;
   }
 
   .hero__ice-cream {
