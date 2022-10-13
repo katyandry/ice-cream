@@ -29,6 +29,11 @@
   align-items: center;
 }
 
+.hero__content {
+  position: relative;
+  z-index: 10;
+}
+
 .hero__link-products {
   display: block;
   font-weight: 600;
@@ -133,10 +138,8 @@
   }
 
   .hero__content {
-    position: relative;
     display: flex;
     justify-content: space-between;
-    z-index: 10;
   }
 
   .hero__ownership {
