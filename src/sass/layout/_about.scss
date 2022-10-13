@@ -277,6 +277,14 @@
     color: var(--primary-white-text-color);
     fill: var(--primary-white-text-color);
   }
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 160px;
+    }
 }
 
 .page__arrow-btn {
