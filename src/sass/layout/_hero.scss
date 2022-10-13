@@ -149,6 +149,7 @@
     font-weight: 900;
     font-size: 28px;
     line-height: 1.2;
+    margin-bottom: 4px;
 
     text-transform: uppercase;
   }
@@ -160,6 +161,7 @@
     line-height: 1.25;
     text-align: right;
     color: var(--primary-white-text-color);
+    margin-bottom: 20px;
   }
 
   .hero__plate-info {
@@ -179,7 +181,7 @@
     font-size: 12px;
     line-height: 1.4;
     color: var(--primary-white-text-color);
-    margin-bottom: 32px;
+    margin-bottom: 10px;
   }
 
   .hero__btn {
@@ -194,8 +196,7 @@
     display: block;
     fill: var(--primary-white-text-color);
     width: 40px;
-    height: 10px;
-    margin-left: -6px;
+    height: 20px;
     transition: transform var(--timing-functione) 250ms;
 
 
@@ -208,17 +209,18 @@
 
 
   .hero__ice-cream {
-    width: 49%;
-    height: 145%;
-    bottom: -70px;
-    left: 340px;
+    width: 50%;
+    height: 152%;
+    bottom: -71px;
+    left: 351px;
+
   }
 
   .hero__dots {
-    width: 100%;
-    height: 20%;
-    bottom: -6px;
-    left: -25px;
+    width: 768px;
+    height: 68px;
+    bottom: -15px;
+    left: -13px;
 
   }
 }
@@ -227,6 +229,7 @@
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 118px;
+    padding-bottom: 65px;
   }
 
   .hero__title {
@@ -234,12 +237,16 @@
     font-size: 38px;
     line-height: 1.26;
     margin-bottom: 28px;
-    margin-bottom: 42px;
+
   }
 
   .hero__title-secondary {
     font-size: 38px;
     line-height: 1.26;
+  }
+
+  .hero__link {
+    margin-bottom: 42px;
   }
 
   .hero__link-products {
@@ -262,11 +269,13 @@
 
   .hero__ice-cream-info {
     font-size: 14px;
-    width: 200px;
+    width: 215px;
+    margin-top: 47px;
   }
 
   .hero__ownership {
     width: 90px;
+    padding-top: 8px;
   }
 
   .hero__amout-of-property {
@@ -276,21 +285,22 @@
   .hero__property {
     font-size: 14px;
     line-height: 1.2;
+    margin-bottom: 16px;
   }
 
   .hero__ice-cream {
     filter: drop-shadow(0 0 3.75rem rgba(252, 252, 252, .44));
-    width: 41%;
-    height: 103%;
-    bottom: -28px;
-    left: 610px;
+    width: 484px;
+    height: 590px;
+    bottom: -65px;
+    left: 621px;
   }
 
   .hero__dots {
-    width: 100%;
-    height: 73%;
-    bottom: -26px;
-    left: -2px;
+    width: 1185px;
+    height: 384px;
+    bottom: -66px;
+    left: 3px;
 
   }
 
