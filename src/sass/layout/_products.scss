@@ -210,7 +210,9 @@
 // TABLET
 
 @media screen and (min-width: 768px) {
-
+    .products {
+      padding-bottom: 82px;
+    }
     .products__list {
         display: flex;
         flex-wrap: wrap;
@@ -297,6 +299,9 @@
 
 
 @media screen and (min-width: 1200px) {
+    .products {
+      padding-bottom: 60px;
+    }
     .products__list {
         gap: 32px;
     }
