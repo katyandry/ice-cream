@@ -20,7 +20,7 @@
   margin-right: auto;
   margin-left: auto;
   background-image: url(./../images/bcg_block4@1x.png);
-  background-size: 1010px;
+  background-size: cover;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -151,6 +151,7 @@
 
   .slider__reviews {
     padding: 28px 80px;
+    border-radius: 24px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -177,7 +178,7 @@
 @media screen and (min-width: 1200px) {
   .reviews {
     padding-top: 452px;
-    padding-bottom: 251px;
+    padding-bottom: 207px;
   }
 
   .reviews__btn {
@@ -185,10 +186,16 @@
   }
 
   .reviews__indicators {
-    bottom: 243px;
+    bottom: 200px;
   }
 
   .slider__photo-customer {
     margin-bottom: 32px;
+  }
+
+  .slider__reviews {
+    width: 970px;
+    padding: 39px 109px 47px 109px;
+
   }
 }
