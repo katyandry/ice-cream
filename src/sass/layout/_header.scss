@@ -67,10 +67,11 @@
   height: 12px;
   width: 12px;
   margin-left: 7px;
-  transition: fill var(--timing-functione) 250ms;
+  stroke: currentColor;
+  transition: stroke var(--timing-functione) 250ms;
 
   .button__base:focus & {
-    fill: var(--primary-white-text-color);
+    stroke: var(--primary-white-text-color);
   }
 }
 
@@ -166,6 +167,7 @@
 }
 
 .mobile-navigation--button {
+  margin-bottom: 63px;
   margin-top: auto;
 }
 
