@@ -1,14 +1,17 @@
 .products {
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-image: url(./../images/bcg_block2@1x.png);
     background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+   
 }
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .products {
     background-image: url(./../images/bcg_block2@2x.png);
+    
     
 }
 }
@@ -61,15 +64,12 @@
     letter-spacing: 0.04em;
     color: var(--primary-black-text-color);
     max-width: 200px;
-    // margin-bottom: 90px;
+    
 }
 
 .products__arrow-btn {
-  display: flex;
-  justify-content: space-between;
   display: block;
   margin: 0 auto;
-  bottom: 0;
   background: none;
   transition: transform var( --timing-functione) 250ms;
     &:hover,
@@ -80,7 +80,8 @@
 .products__arrow {
   fill: var(--primary-black-text-color);
   display: block;
-  bottom: 0;
+ 
+  
 }
 
 // Ice Cream
@@ -209,7 +210,9 @@
 // TABLET
 
 @media screen and (min-width: 768px) {
-
+    .products {
+      padding-bottom: 82px;
+    }
     .products__list {
         display: flex;
         flex-wrap: wrap;
@@ -246,6 +249,7 @@
         font-weight: 700;
         font-size: 22px;
         line-height: 1.22;
+        margin-top: 0px;
         margin-bottom: 40px;
     }
     .products__milkshakes::after {
@@ -295,6 +299,9 @@
 
 
 @media screen and (min-width: 1200px) {
+    .products {
+      padding-bottom: 60px;
+    }
     .products__list {
         gap: 32px;
     }
