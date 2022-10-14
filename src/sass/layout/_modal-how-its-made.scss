@@ -13,7 +13,7 @@
   border-radius: 10px;
 
   @media screen and (max-width: 767px) {
-    width: 459px;
+    width: 280px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -25,13 +25,20 @@
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
   display: flex;
   align-items: center;
   text-align: center;
   color: #131313;
   margin-bottom: 32px;
+  top: 28px;
+
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 .video {
@@ -42,14 +49,22 @@
 
 .modal__close-button {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 3.55px;
+  right: 3.55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 8.9px;
+  height: 8.9px;
   background-color: transparent;
+
+
+  @media screen and (min-width: 768px) {
+    top: 4.44px;
+    right: 4.41px;
+    width: 11.11px;
+    height: 11.14px;
+  }
 }
 
 .video__frame {
@@ -70,9 +85,14 @@
 
 .modal__report {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.375;
+  font-size: 14px;
+  line-height: 1.4;
   color: var(--primary-black-text-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -87,13 +107,18 @@
   }
 
   .modal__report {
-    // width: 448px;
-    // height: 88px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.42;
+    font-size: 14px;
+    line-height: 1.4;
     color: #131313;
+    Width: 224px;
+    Height: 140px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
   }
 }
