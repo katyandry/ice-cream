@@ -4,14 +4,15 @@
   left: 50%;
   transform: translatex(-50%);
   z-index: 20;
-  min-width: 240px;
+  // min-width: 240px;
+  width: 100%;
 }
 
-@media screen and(max-width: 480px) {
-  .page-header {
-    width: 100%;
-  }
-}
+// @media screen and(max-width: 480px) {
+//   .page-header {
+//     width: 100%;
+//   }
+// }
 
 .logo__icon {
   color: var(--accsent-color);
