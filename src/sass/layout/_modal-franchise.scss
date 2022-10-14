@@ -1,3 +1,24 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #96af8c;
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity var(--timing-functione) 250ms,
+    visibility var(--timing-functione) 250ms;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .modal-franchise {
   position: absolute;
   top: 50%;
@@ -6,82 +27,112 @@
   background: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 60px;
-  padding-right: 60px;
-  max-width: 568px;
-}
+  padding: 28px;
+  width: 280px;
 
-.modal-franchise__form {
-  display: flex;
-  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
 }
 
 .modal-franchise__thanks {
-  width: 322px;
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
   color: #131313;
-  margin-bottom: 24px;
-}
+  margin-bottom: 20px;
 
-.modal-franchise__thanks-box {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 322px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+  }
 }
 
 .modal-franchise__txt-info {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   color: #131313;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-franchise__form-input {
-  width: 368px;
-  height: 42px;
+  width: 224px;
+  height: 32px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
-  margin-bottom: 16px;
-  padding: 11 16;
+  margin-bottom: 12px;
+  padding: 8 12;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    height: 42px;
+    padding: 11 16;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
 }
 
 .modal-franchise__form-message {
-  width: 368px;
-  height: 84px;
+  width: 224px;
+  height: 64px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
-  padding: 11 16;
+  padding: 8 12;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
   color: #131313;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    height: 84px;
+    padding: 11 16;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-franchise__btn {
-  width: 121px;
+  width: 114px;
   height: 42px;
   background: #f8d24e;
   border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #131313;
 
   &:hover {
     background: var(--button-hover-focus-color);
@@ -91,22 +142,23 @@
     background: var(--button-hover-focus-color);
     color: var(--primary-white-text-color);
   }
+
+  &:disabled {
+    background: #ababab;
+  }
+
+  transition: background-color var(--timing-functione) 250ms,
+    color var(--timing-functione) 250ms;
+
+  @media screen and (min-width: 768px) {
+    width: 121px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
 }
 
-.modal-franchise__btn-txt {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #131313;
-}
-
-.modal-franchise__input-box {
+.modal-franchise__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,12 +166,16 @@
 
 .modal-close-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
 }

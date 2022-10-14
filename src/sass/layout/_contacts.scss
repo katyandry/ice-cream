@@ -326,31 +326,18 @@
   &:focus {
     background: var(--button-hover-focus-color);
     color: var(--primary-white-text-color);
-    fill: var(--primary-white-text-color);
   }
 
   &:disabled {
     background: #ababab;
   }
 
+  transition: background-color var(--timing-functione) 250ms,
+    fill var(--timing-functione), color var(--timing-functione) 250ms;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     margin-right: 16px;
-  }
-}
-
-.contacts__btn-loc-txt {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  text-align: center;
-  color: #131313;
-  margin-right: 10px;
-
-  &:focus {
-    color: var(--primary-white-text-color);
   }
 }
 
@@ -367,7 +354,7 @@
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
-  color: #131313;
+  color: var(--primary-black-text-color);
 
   &:hover {
     border: 2px solid var(--button-hover-focus-color);
@@ -375,13 +362,15 @@
 
   &:focus {
     border: 2px solid var(--button-hover-focus-color);
-    fill: var(--primary-white-text-color);
     color: var(--primary-white-text-color);
   }
 
   &:disabled {
     border: 2px solid #ababab;
   }
+
+  transition: border var(--timing-functione) 250ms, fill var(--timing-functione),
+    color var(--timing-functione) 250ms;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -415,4 +404,5 @@
 
 .contacts__icon {
   margin-left: 10px;
+  stroke: currentColor;
 }
