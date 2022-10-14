@@ -7,12 +7,11 @@
   min-width: 240px;
 }
 
-@media screen and(max-width: 480px){
+@media screen and(max-width: 480px) {
   .page-header {
     width: 100%;
   }
 }
-  
 
 .logo__icon {
   color: var(--accsent-color);
@@ -158,6 +157,9 @@
   line-height: 1.22;
 
   color: var(--primary-white-text-color);
+}
+
+.mobile-navigation__link {
   transition: color var(--timing-functione) 250ms;
 
   &:focus,
@@ -229,8 +231,8 @@
   color: var(--primary-white-text-color);
   transition: color var(--timing-functione) 250ms;
 
-  .navigation__item:focus &,
-  .navigation__item:hover & {
+  &:focus,
+  &:hover {
     color: var(--accsent-color);
   }
 }

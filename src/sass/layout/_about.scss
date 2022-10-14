@@ -1,14 +1,14 @@
 .about {
   padding-top: 60px;
-  padding-bottom: 32px;
+  padding-bottom: 42px;
   background-color: var(--primary-background-color);
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 62px;
+    padding-bottom: 53px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 79px;
+    padding-bottom: 62px;
   }
 
   &__lable {
@@ -115,7 +115,6 @@
       width: 500px;
       height: 500px;
       margin-right: 100px;
-      margin-bottom: 107.88px;
     }
   }
 
@@ -185,7 +184,7 @@
     @media screen and (min-width: 1200px) {
       font-weight: 400;
       font-size: 16px;
-      line-height: 2.33;
+      line-height: 1.75;
     }
   }
 
@@ -241,6 +240,7 @@
 }
 
 .about__box {
+
   // margin-left: 100px;
   @media screen and (max-width: 767px) {
     margin-left: 0px;
@@ -278,13 +278,13 @@
     fill: var(--primary-white-text-color);
   }
 
-    @media screen and (min-width: 768px) {
-      margin-bottom: 35px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+  }
 
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 160px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 5px;
+  }
 }
 
 .page__arrow-btn {

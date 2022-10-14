@@ -25,7 +25,7 @@
   margin-bottom: 16px;
 
   content: '';
-  background: url('../images/icon_cow@2x.png') no-repeat center center/cover;
+  background: url('../images/Icon_cow@1x.png') no-repeat center center/cover;
   background-size: 36px 36px;
   width: 50px;
   height: 50px;
@@ -44,7 +44,7 @@
   margin-bottom: 16px;
 
   content: '';
-  background: url('../images/icon_weight@2x.png') no-repeat center center/cover;
+  background: url('../images/icon_weight@1x.png') no-repeat center center/cover;
   background-size: 36px 36px;
   width: 50px;
   height: 50px;
@@ -63,7 +63,7 @@
   margin-bottom: 16px;
 
   content: '';
-  background: url('../images/icon_ice_crema@2x.png') no-repeat center center/cover;
+  background: url('../images/icon_ice_crema@1x.png') no-repeat center center/cover;
   background-size: 36px 36px;
   width: 50px;
   height: 50px;
@@ -96,6 +96,7 @@
   line-height: 170%;
   text-align: center;
 }
+
 
 @media screen and (min-width: 768px) {
   .advantages__list {
@@ -163,5 +164,31 @@
 
   .advantages-list__item {
     margin-bottom: 0;
+  }
+}
+
+// icone-2x
+
+@media (min-device-pixel-ratio: 2) and (min-width: 320px),
+(min-resolution: 192dpi) and (min-width: 320px),
+(min-resolution: 2dppx) and (min-width: 320px) {
+
+  .icon-cow::before {
+    background: url('../images/icon_cow@2x.png') no-repeat center center/cover;
+    background-color: var(--accsent-color);
+    background-size: 36px 36px;
+  }
+
+  .icon-weight::before {
+    background: url('../images/icon_weight@2x.png') no-repeat center center/cover;
+    background-color: var(--accsent-color);
+      background-size: 36px 36px;
+  }
+
+  .icon-ice-creme::before {
+    background: url('../images/icon_ice_crema@2x.png') no-repeat center center/cover;
+    background-color: var(--accsent-color);
+      background-size: 36px 36px;
+
   }
 }
