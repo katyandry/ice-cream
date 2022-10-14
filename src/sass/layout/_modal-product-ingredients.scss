@@ -143,7 +143,6 @@
     height: 42px;
     transition: 250ms var(--timing-functione);
 
-    &:hover,
     &:focus {
       color: var(--primary-white-text-color);
     }
@@ -168,9 +167,14 @@
       width: calc((100% - 20px*3)/4);
 
       &-quant {
+        font-size: 12;
         height: 53px;
         width: 53px;
         margin-bottom: 7px;
+      }
+
+      &-name {
+        font-size: 12;
       }
     }
 }
