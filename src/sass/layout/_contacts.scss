@@ -158,6 +158,11 @@
   }
 }
 
+.contacts__item_adress:hover,
+.contacts__item_adress:focus {
+  text-decoration: underline;
+}
+
 .contacts__item_adress {
   width: 212px;
   height: 36px;

@@ -56,6 +56,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--primary-black-text-color);
+    margin-bottom: 40px;
 }
 .products__text {
     text-align: center;
@@ -225,7 +226,7 @@
         height: 428px;
         width: 100%;
         margin: 0;
-        padding: 108px 26px 10px 26px;
+        padding: 128px 26px 10px 26px;
     }
     .products__label {
         font-weight: 800;
@@ -329,6 +330,7 @@
     .products__subtitle {
         font-size: 30px;
         line-height: 1.23;
+        margin-bottom: 65px;
     }
         .products__icecream::after {
         width: 301px;
